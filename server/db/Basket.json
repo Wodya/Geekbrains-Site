@@ -1,0 +1,30 @@
+[
+    {
+        "quantity": 8,
+        "id": 1,
+        "name": "Mango People T-shirt",
+        "image": "product1",
+        "price": 52
+    },
+    {
+        "quantity": 1,
+        "id": 5,
+        "name": "T-shirt",
+        "image": "product5",
+        "price": 772
+    },
+    {
+        "quantity": 5,
+        "id": 2,
+        "name": "Mango hur T-shirt",
+        "image": "product2",
+        "price": 152
+    },
+    {
+        "quantity": 2,
+        "id": 3,
+        "name": "Hurma soaks",
+        "image": "product3",
+        "price": 52
+    }
+]
