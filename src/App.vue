@@ -6,10 +6,12 @@ import ProductPage from './components/ProductPage'
 import ProductOrderPage from './components/ProductOrderPage'
 import ProductList from './components/ProductList';
 import Basket from "./components/Basket";
+import Search from "./components/Search";
 
 export default {
   name: 'App',
   components: {
+    Search,
     Basket,
     // eslint-disable-next-line vue/no-unused-components
     MainPage,
@@ -22,12 +24,12 @@ export default {
     // eslint-disable-next-line vue/no-unused-components
     ProductOrderPage,
     // eslint-disable-next-line vue/no-unused-components
-    ProductList
+    ProductList,
   },
   methods:{
     basket_add(product){
       return this.$refs.basket.basket_add(product);
-    }
+    },
   },
   provide() {
     return{
@@ -68,8 +70,7 @@ export default {
               </div>
             </div>
           </details>
-          <input class="header__browse_search_input" type="text" placeholder="Search for Item...">
-          <a href="#" class="header__browse_search_button"><i class="fas fa-search"></i></a>
+          <Search ref="search" />
         </form>
       </div>
       <div class="header__right">
